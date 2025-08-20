@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Musical - Disque de mon Père</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header avec navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Nom de l'Artiste</div>
+                <ul class="nav-links">
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#album">Album</a></li>
+                    <li><a href="#boutique">Boutique</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="accueil">
+        <div class="hero-content">
+            <h1>Nom de l'Album</h1>
+            <p>Une œuvre musicale unique créée avec passion</p>
+            <a href="#boutique" class="btn">Acheter l'album</a>
+        </div>
+    </section>
+
+    <!-- Intro Section -->
+    <section class="intro" id="album">
+        <div class="container">
+            <h2>Découvrez l'univers de cet album</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam auctor, nisl eu ultricies lacinia, nunc nisl aliquam nisl, eu aliquam nisl nunc eu nisl. Cet album est le fruit de plusieurs années de travail et de passion.</p>
+            <p>Chaque chanson raconte une histoire unique, accompagnée par des mélodies envoûtantes et des paroles profondes.</p>
+        </div>
+    </section>
+
+    <!-- Lyrics Sections -->
+    <section class="lyrics-section">
+        <div class="container">
+            <!-- Chanson 1 -->
+            <div class="lyrics-container">
+                <div class="lyrics-text">
+                    <h3 class="song-title">Titre de la chanson 1</h3>
+                    <p class="lyrics-excerpt">
+                        "Première strophe de la chanson<br>
+                        Les mots qui résonnent en toi<br>
+                        Le sens profond de la vie<br>
+                        À travers cette mélodie"
+                    </p>
+                    <p class="lyrics-excerpt">
+                        "Refrain poignant et mémorable<br>
+                        Qui reste dans les esprits<br>
+                        Une ritournelle envoûtante<br>
+                        Qui captive et éblouit"
+                    </p>
+                    <button class="play-btn" data-audio="audio/song1.mp3">Écouter un extrait</button>
+                </div>
+                <div class="lyrics-image">
+                    <img src="https://placehold.co/600x400/5e81ac/white?text=Image+1" alt="Image illustrative pour la chanson 1">
+                </div>
+            </div>
+
+            <!-- Chanson 2 -->
+            <div class="lyrics-container reverse">
+                <div class="lyrics-text">
+                    <h3 class="song-title">Titre de la chanson 2</h3>
+                    <p class="lyrics-excerpt">
+                        "Deuxième chanson, émotions fortes<br>
+                        Les paroles résonnent juste<br>
+                        Une mélodie envoûtante<br>
+                        Qui nous transporte loin"
+                    </p>
+                    <p class="lyrics-excerpt">
+                        "Le refrain monte en intensité<br>
+                        Les instruments s'emballent<br>
+                        Une symphonie de sentiments<br>
+                        Qui en nos cœurs dévalent"
+                    </p>
+                    <button class="play-btn" data-audio="audio/song2.mp3">Écouter un extrait</button>
+                </div>
+                <div class="lyrics-image">
+                    <img src="https://placehold.co/600x400/5e81ac/white?text=Image+2" alt="Image illustrative pour la chanson 2">
+                </div>
+            </div>
+
+            <!-- Ajoutez d'autres chansons ici suivant le même modèle -->
+        </div>
+    </section>
+
+    <!-- Conclusion Section -->
+    <section class="conclusion">
+        <div class="container">
+            <h2>Une conclusion puissante</h2>
+            <p>Cet album est une expérience unique qui restera gravée dans votre mémoire. Chaque écoute révèle de nouvelles subtilités et émotions.</p>
+            <p>Les mélodies vous accompagneront longtemps après avoir éteint la musique, et les paroles résonneront avec vos propres expériences.</p>
+        </div>
+    </section>
+
+    <!-- Boutique Section -->
+    <section class="shop" id="boutique">
+        <div class="container">
+            <h2>Acheter l'album</h2>
+            <div class="album-cover">
+                <img src="https://placehold.co/400x400/5e81ac/white?text=Cover+Album" alt="Cover de l'album">
+            </div>
+            <p class="price">Prix: 15€</p>
+            <a href="#" class="btn" id="buy-button">Acheter maintenant</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#album">Album</a></li>
+                <li><a href="#boutique">Boutique</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <p>Contact: email@exemple.com</p>
+            <p class="copyright">&copy; 2023 Nom de l'Artiste. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- Player Audio -->
+    <div class="audio-player" id="audio-player">
+        <audio id="audio-element" controls></audio>
+        <button class="close-player">&times;</button>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
